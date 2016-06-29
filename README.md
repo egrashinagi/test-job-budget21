@@ -5,6 +5,8 @@
 - Форма вида http://blackrockdigital.github.io/startbootstrap-clean-blog/ адрес #/main, вместо надписи Clean Blog необходимо вывести данные из формы ввода логина. Форма должен открыться в модельном окне $mddialog.
 
 Все скрипты приложения должны быть объединены c помощью gulp (или webpack, оговорено заранее) в один файл (название файла app.js)
+
+реп - https://github.com/blackrockdigital/startbootstrap-clean-blog/
  
 ##Install
 ```
