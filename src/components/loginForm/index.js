@@ -3,6 +3,6 @@ import angular from "angular";
 import LoginFormDirective from "./loginForm.directive";
 
 export default angular.module('app.loginForm', [])
-  .directive('loginform', LoginFormDirective)
+  .directive('loginform', () => new LoginFormDirective)
   .name
 ;

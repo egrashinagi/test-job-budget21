@@ -1,20 +1,30 @@
 'use strict';
 
-export default () => {
-  return {
-    template: require('html!./loginForm.html'),
-    restrict: 'E',
-    scope: {}
-  }
-}
-
-
-/*
  export default class LoginForm {
   constructor() {
     this.template = require('html!./loginForm.html');
     this.restrict = 'E';
-    this.scope = {}
+    this.scope = {};
+
+    // this.controller = ExampleDirectiveController;
+    // this.controllerAs = 'ctrl';
+    // this.bindToController = true;
+   }
+
+   // Directive compile function
+   compile() {
+
+   }
+
+   // Directive link function
+   link() {
+
    }
  }
- */
+//
+// // Directive's controller
+// class ExampleDirectiveController {
+//   constructor () {
+//     this.name = 'Alex';
+//   }
+// }
