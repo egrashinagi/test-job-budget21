@@ -7,6 +7,7 @@ const path = require('path');
 const webpack = require('webpack');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const CopyWebpackPlugin = require('copy-webpack-plugin');
 const autoprefixer = require('autoprefixer');
 
 
@@ -15,7 +16,8 @@ const pluginsCommon = [
     title: 'My App',
     template: './src/index.html'
   }),
-  new ExtractTextPlugin('style.css', {allChunks: true})
+  new ExtractTextPlugin('style.css', {allChunks: true}),
+  new CopyWebpackPlugin([ { from: './src/assets', to: './assets' }])
 ];
 const pluginsProd = [
   ...pluginsCommon,

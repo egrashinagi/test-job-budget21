@@ -1,10 +1,16 @@
-<form>
-  <label>
-    login
-    <input type="text">
-  </label>
-  <label>
-    password
-    <input type="text">
-  </label>
+<form layout="column" layout-padding layout-margin>
+  <md-input-container>
+    <label>email</label>
+    <md-icon md-svg-src="/assets/img/person.svg" class="name"></md-icon>
+    <input ng-model="user.email" type="email">
+  </md-input-container>
+
+  <md-input-container>
+    <label>password</label>
+    <md-icon md-svg-src="/assets/img/lock.svg" class="password"></md-icon>
+    <input ng-model="user.password" type="password">
+  </md-input-container>
+  <div layout="row">
+    <md-button class="md-raised">Войти</md-button>
+  </div>
 </form>
