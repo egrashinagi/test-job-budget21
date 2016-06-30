@@ -1,6 +1,16 @@
 <div layout="column">
-  <md-toolbar layout-padding layout="row" layout-align="center center"
+  <md-toolbar layout-padding layout="column"
               style="background: url('/assets/img/home-bg.jpg') center center no-repeat; background-size: cover;">
+    <div layout="row">
+      <div flex="30" layout="row" layout-align="start center">
+        Start Bootstrap
+      </div>
+      <div flex="70" layout="row" layout-align="end">
+        <div ng-repeat="menuItem in ['home','about','sample post', 'contacts']" layout-margin layout-padding>
+          <a href="/#/main" style="text-decoration: none; color: #fff;">{{menuItem}}</a>
+        </div>
+      </div>
+    </div>
     <div layout="column" style="text-align:center;">
       <h2>{{ qwe || 'Clean blog'}}</h2>
       <hr>
