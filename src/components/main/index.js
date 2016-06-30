@@ -2,7 +2,7 @@
 
 import angular from "angular";
 import routing from "./main.routes";
-import MainController from "./main.controller";
+import MainController from "./main.menuItems.controller";
 
 
 export default angular
