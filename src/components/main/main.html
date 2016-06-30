@@ -6,8 +6,10 @@
         Start Bootstrap
       </div>
       <div flex="70" layout="row" layout-align="end">
-        <div ng-repeat="menuItem in ['home','about','sample post', 'contacts']" layout-margin layout-padding>
-          <a href="/#/main" style="text-decoration: none; color: #fff;">{{menuItem}}</a>
+        <div
+          ng-repeat="menuItem in menuItems"
+          layout-margin layout-padding>
+          <a ui-sref={{menuItem.state}} style="text-decoration: none; color: #fff;">{{menuItem.title}}</a>
         </div>
       </div>
     </div>
