@@ -8,5 +8,5 @@ import MainController from "./main.menuItems.controller";
 export default angular
   .module('app.main', [])
   .config(routing)
-  .controller('mainCtrl', MainController)
+  .controller('menuItemsCtrl', MainController)
   .name;
