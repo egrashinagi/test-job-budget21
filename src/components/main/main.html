@@ -1,10 +1,14 @@
 <div layout="column">
-  <md-toolbar layout-padding>
-    <h2>Toolbar</h2>
+  <md-toolbar layout-padding layout="row" layout-align="center center"
+              style="background: url('/assets/img/home-bg.jpg') center center no-repeat; background-size: cover;">
+    <div layout="column" style="text-align:center;">
+      <h2>{{ qwe || 'Clean blog'}}</h2>
+      <hr>
+      <h3>A Clean Blog Theme by Start Bootstrap</h3>
+    </div>
+
   </md-toolbar>
   <md-content flex layout-padding layout="row">
-
-
     <div flex="5" hide-sm hide-xs></div>
     <div flex layout="column">
       <div ng-repeat="item in [1,2,3]" layout-margin>
