@@ -1,10 +1,11 @@
 'use strict';
 export default class MainController {
-  constructor() {
-    this.name = 'myHome';
-  }
-
-  changeName() {
-    this.name = 'newName';
+  constructor($scope) {
+    $scope.menuItems = [
+      {title: 'home', state: 'home'},
+      {title: 'about', state: 'main'},
+      {title: 'sample post', state: 'main'},
+      {title: 'contacts', state: 'main'}
+    ];
   }
 }
