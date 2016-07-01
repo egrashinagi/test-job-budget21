@@ -10,11 +10,6 @@ export default function routes($stateProvider) {
           template: require('html!./dialog.html'),
           parent: angular.element(document.querySelector('.login-container'))
         })
-          .then(function (answer) {
-            alert('then')
-          }, function () {
-            alert('cancel')
-          })
       }
     });
 }

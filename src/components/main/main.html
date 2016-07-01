@@ -1,11 +1,11 @@
-<div layout="column" ng-controller="menuItemsCtrl">
+<div layout="column">
   <md-toolbar layout-padding layout="column"
               style="background: url('/assets/img/home-bg.jpg') center center no-repeat; background-size: cover;">
     <div layout="row">
       <div flex="30" layout="row" layout-align="start center">
         Start Bootstrap
       </div>
-      <div flex="70" layout="row" layout-align="end">
+      <div flex="70" layout="row" layout-align="end" ng-controller="menuItemsCtrl">
         <div
           ng-repeat="menuItem in menuItems"
           layout-margin layout-padding>
@@ -13,8 +13,8 @@
         </div>
       </div>
     </div>
-    <div layout="column" style="text-align:center;">
-      <h2>{{ qwe || 'Clean blog'}}</h2>
+    <div layout="column" style="text-align:center;" ng-controller="header">
+      <h2>{{ header || 'Clean blog'}}</h2>
       <hr>
       <h3>A Clean Blog Theme by Start Bootstrap</h3>
     </div>
