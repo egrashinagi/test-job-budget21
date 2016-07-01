@@ -1,0 +1,35 @@
+<div layout="column">
+  <md-toolbar layout-padding layout="column"
+              style="background: url('/assets/img/home-bg.jpg') center center no-repeat; background-size: cover;">
+    <div layout="row">
+      <div flex="30" layout="row" layout-align="start center">
+        Start Bootstrap
+      </div>
+      <div flex="70" layout="row" layout-align="end" ng-controller="menuItemsCtrl">
+        <div
+          ng-repeat="menuItem in menuItems"
+          layout-margin layout-padding>
+          <a ui-sref={{menuItem.state}} style="text-decoration: none; color: #fff;">{{menuItem.title}}</a>
+        </div>
+      </div>
+    </div>
+    <div layout="column" style="text-align:center;" ng-controller="header">
+      <h2>{{ header || 'Clean blog'}}</h2>
+      <hr>
+      <h3>A Clean Blog Theme by Start Bootstrap</h3>
+    </div>
+
+  </md-toolbar>
+  <md-content flex layout-padding layout="row">
+    <div flex="5" hide-sm hide-xs></div>
+    <div flex layout="column">
+      <div ng-repeat="item in [1,2,3]" layout-margin>
+        <div class="md-display-3">Header of article</div>
+        <div class="md-display-1">Short description for this article</div>
+        <div class="md-headline">Posted by Start Bootstrap on September 24, 2014</div>
+        <md-divider ng-if="!$last"></md-divider>
+      </div>
+    </div>
+    <div flex="5" hide-sm hide-xs></div>
+  </md-content>
+</div>

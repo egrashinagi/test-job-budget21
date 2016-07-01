@@ -1,0 +1,16 @@
+<form layout="column" layout-padding layout-margin>
+  <md-input-container>
+    <label>email</label>
+    <md-icon md-svg-src="/assets/img/person.svg" class="name"></md-icon>
+    <input class="login-form-email" ng-model="$rootScope.email" type="email" required>
+  </md-input-container>
+
+  <md-input-container>
+    <label>password</label>
+    <md-icon md-svg-src="/assets/img/lock.svg" class="password"></md-icon>
+    <input ng-model="$rootScope.password" type="password">
+  </md-input-container>
+  <!--<div layout="row">
+    <md-button ui-sref='main' class="md-raised">Войти</md-button>
+  </div>-->
+</form>
