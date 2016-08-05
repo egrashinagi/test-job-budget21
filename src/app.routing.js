@@ -1,5 +1,5 @@
 'use strict';
-// qweqwe qwe qwert
+// qweqwe
 
 // routing.$inject = ['$urlRouterProvider', '$locationProvider'];
 
